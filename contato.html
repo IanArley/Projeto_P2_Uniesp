@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Mensagem</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="HeadButtons">
+            <div class="home">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="cont">
+                <a href="contato.html">Contatos</a>
+            </div>
+            <div class="msgs">
+                <a href="login.html">Área administrativa</a>
+            </div>        
+        </div>
+    </header>
+    
+    <div class="mensagem-container">
+        <p id="userEmail"></p>
+        <h2>Enviar Mensagem</h2>
+        <form id="formMensagem">
+            <div class="campo">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="destinatario">Email Destinatário:</label>
+                <input type="email" id="destinatario" name="destinatario" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+
+            <button type="button" onclick="enviarMensagem()">Enviar</button>
+
+            <!-- Alteração aqui -->
+            <a href="mesages.html" onclick="verMensagens()">Ver Mensagens Recebidas</a>
+
+            <button type="button" onclick="window.history.back()">Voltar</button>
+        </form>
+    </div>
+
+</body>
+</html>

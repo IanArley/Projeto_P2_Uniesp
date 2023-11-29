@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <script src="C:\Users\ianar\OneDrive\Documentos\api.js"></script>
+</head>
+<body>
+    <header>
+        <div class="HeadButtons">
+            <div class="home">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="cont">
+                <a href="contato.html">Contatos</a>
+            </div>
+            <div class="adm">
+                <a class="ad" href="login.html">Área administrativa</a>   
+            </div>
+        </div>    
+    </header>
+    <div class="login">
+        <p class="pi">Bem-vindo à Página de Login</p>
+
+        <!-- Adicione este elemento para mostrar o e-mail logado -->
+        <p id="usuarioLogadoInfo"></p>
+
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <br>
+            <button type="button" onclick="realizarLogin()">Login</button>
+        </form>
+
+        <p>Não tem cadastro? <a href="home.html">Cadastre-se</a></p>
+        <p id="userEmail"></p>
+    </div>
+</body>
+</html>

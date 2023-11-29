@@ -1,0 +1,92 @@
+body {
+    border: 2px inset black;
+    margin: 10%;
+    padding: 0;
+    background-color: #f0f0f0; /* Cinza claro */
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.HeadButtons a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+.HeadButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inicio {
+    text-align: center;
+    padding: 20px;
+}
+
+.pi {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#cadastroForm,
+#loginForm,
+.mensagem-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#cadastroForm label,
+#loginForm label,
+.mensagem-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#cadastroForm input,
+#loginForm input,
+.mensagem-container input,
+#cadastroForm textarea,
+#loginForm textarea,
+.mensagem-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#cadastroForm button,
+#loginForm button,
+.mensagem-container button {
+    padding: 10px;
+    background-color: #000; /* Preto */
+    color: #fff; /* Branco */
+    border: none;
+    cursor: pointer;
+}
+
+#cadastroForm button:hover,
+#loginForm button:hover,
+.mensagem-container button:hover {
+    background-color: #333; /* Preto mais escuro */
+}
+
+#cadastroForm a,
+#loginForm a,
+.mensagem-container a {
+    color: #333; /* Preto mais escuro */
+    text-decoration: none;
+}
+
+#cadastroForm a:hover,
+#loginForm a:hover,
+.mensagem-container a:hover {
+    text-decoration: underline;
+}
